@@ -61,7 +61,7 @@ class DiscordPlugin(Plugin):
     def __init__(self, reader, writer, token):
         super().__init__(
             Platform.Discord,  # Choose platform from available list
-            "0.1.1",  # Version
+            "0.1.4",  # Version
             reader,
             writer,
             token
@@ -225,7 +225,6 @@ async def get_data_from_local_cache(ws: websocket.WebSocket, data: str):
                   const iframe = document.createElement('iframe');
                   document.body.append(iframe);
                   const pd = Object.getOwnPropertyDescriptor(iframe.contentWindow, 'localStorage');
-                  iframe.remove();
                   return pd;
                 }};
             return g_{nonce}().get.apply().{data}      
